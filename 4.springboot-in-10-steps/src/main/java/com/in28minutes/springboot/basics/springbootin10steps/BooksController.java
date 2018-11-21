@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BooksController {
 	@GetMapping("/books")
 	public List<Book> getAllBooks() {
+		System.out.print("Rajesh");
 		return Arrays.asList(
 				new Book(1l, "Mastering Spring 5.2", "Ranga Karanam"));
 	}
